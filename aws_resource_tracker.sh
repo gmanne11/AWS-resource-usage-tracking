@@ -31,4 +31,5 @@ aws lambda list-functions >> ResourceTracker
 echo "print list of IAM users"
 aws iam list-users >> ResourceTracker
 
-
+# Command to send email notification
+echo "AWS resource utilization report" | mail -s "AWS Resource Utilization Report" gopim4959@gmail.com
